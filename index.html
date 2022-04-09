@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Home - Blog 2022</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <img src="images/Path_208.png">
+            </div>
+            
+            <div class="menu">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+
+            <div class="navlist">
+                <div class="close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Guest Post</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left">
+                <div class="title">
+                    <h1>A blog that people will actually want to read</h1>
+                </div>
+                <div class="subtitle">
+                    <p>People use Bulletin to share big ideas with the world on a regular basis with a focus on accessibility and usability.</p>
+                </div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter Your E-mail">
+                    <a href="#" class="getStartedBtn">Get Started</a>
+                </div>
+            </div>
+    
+            <div class="right">
+                <img src="images/undraw_emails_re_cqen.svg">
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <div class="beauty">
+                <div class="beautyBtn">
+                    <a href="">Beauty</a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="beauty">
+                <div class="beautyBtn">
+                    <a href="">Beauty</a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="beauty">
+                <div class="beautyBtn">
+                    <a href="">Beauty</a>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu');
+        const navList = document.querySelector('.navlist');
+        const closeBtn = document.querySelector('.close');
+
+        menuBtn.addEventListener('click', function() {
+            navList.classList.toggle('active');
+        })
+
+        closeBtn.addEventListener('click', function() {
+            navList.classList.remove('active');
+        })
+    </script>
+</body>
+</html>
